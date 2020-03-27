@@ -11,6 +11,8 @@ OR
 
 - `npm i https://github.com/htorbov/capacitor-apple-login`
 
+Then `npx cap update` to let Capacitor find the plugin otherwise SignInWithApple will be undefined at runtime.
+
 ## Usage (iOS)
 
 ```ts
