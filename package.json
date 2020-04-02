@@ -25,7 +25,8 @@
     "src/",
     "ios/",
     "android/",
-    "CapacitorAppleLogin.podspec"
+    "CapacitorAppleLogin.podspec",
+    "tsconfig.json"
   ],
   "keywords": [
     "capacitor",
