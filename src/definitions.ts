@@ -6,4 +6,5 @@ declare module "@capacitor/core" {
 
 export interface SignInWithApplePlugin {
   Authorize(): Promise<{response: any}>;
+  GetMajorVersion(): Promise<{"majorVersion": number}>;
 }

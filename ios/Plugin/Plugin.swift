@@ -25,6 +25,14 @@ public class SignInWithApple: CAPPlugin {
             call.reject("Sign in with Apple is available on iOS 13.0+ only.")
         }
     }
+
+    @objc func GetMajorVersion(_ call: CAPPluginCall) {
+        self.call = call
+
+        let os = ProcessInfo().operatingSystemVersion;
+
+        call.resolve(["majorVersion": os.majorVersion]);
+    }
 }
 
 @available(iOS 13.0, *)
